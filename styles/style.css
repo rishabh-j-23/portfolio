@@ -369,3 +369,9 @@ a {
         margin: 2%;
     }
 }
+
+/* White Mode Styles */
+.white-mode {
+    background-color: var(--white);
+    color: var(--dark-grey); /* Change text color to a dark color for contrast */
+}
