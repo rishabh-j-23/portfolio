@@ -16,7 +16,7 @@ var appendTools = (name, icon, className) => {
 };
 
 var skills = {
-    "C Language": "devicon-c-plain-wordmark colored",
+    "C": "devicon-c-plain-wordmark colored",
     "Java" : "devicon-java-plain colored",
     "Python": "devicon-python-plain",
     "HTML": "devicon-html5-plain colored",
@@ -35,7 +35,8 @@ var frameworkAndLibs = {
     "Node.js" : "devicon-nodejs-plain colored",
     "Express.js" : "devicon-express-original",
     "React.js" : "devicon-react-original colored",
-    "Next.js" : "devicon-nextjs-original"
+    "Next.js" : "devicon-nextjs-original",
+    "Tailwind": "devicon-tailwindcss-plain colored"
 };
 
 for (const skill in frameworkAndLibs) {

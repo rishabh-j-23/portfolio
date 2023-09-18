@@ -27,11 +27,23 @@ body {
     height: 100vh;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mobile-header {
+    display: none;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    width: 100%;
+    margin-right: 20%;
 }
 
 .logo {
@@ -44,7 +56,6 @@ body {
 
 .navigation {
     padding: 4px;
-    margin-right: 20%;
 }
 
 .navigation a{
@@ -69,6 +80,25 @@ body {
     font-size: 1.1rem;
 }
 
+#mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grey);
+
+}
+
+a {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px;
+}
+
 /* Home */
 
 .intro-container {
@@ -83,6 +113,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 80vh;
 }
 
@@ -120,6 +151,39 @@ body {
 .social-links i:hover {
     color: var(--blue);
     box-shadow: 1px 1px 20px 1px var(--grey);
+}
+.gmail i:hover {
+    box-shadow: none;
+    color: inherit;
+    cursor: default;
+}
+.social-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.gmail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goto-section ul {
+    display: flex;
+    padding: 20px;
+}
+
+.goto-section ul li {
+    list-style: none ;
+    padding: 20px;
+}
+
+.goto-section a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 10px;
+    border-radius: 20px;
 }
 
 /* Projects */
@@ -161,10 +225,23 @@ body {
     font-size: 3rem;
     padding: 5px;
     padding: 20px;
+    border-radius: 50%;
 }
 
+.github-redirect i:hover {
+    color: var(--blue);
+}       
+
+.github-redirect a {
+    text-decoration: none;
+    color: white;
+}
 
 /* skills */
+
+.panels {
+    width: 100%;
+}
 
 .goto {
     position: fixed;
@@ -183,6 +260,7 @@ body {
     flex-direction: column;
     margin: 20px 30% 0px 25%;
     width: 60%;
+    
 }
 .skills-display {
     display: flex;
@@ -196,10 +274,12 @@ body {
     align-items: center;
     justify-content: center;
     margin: 20px;
+    width: 70px;
+    height: 70px;
 }
 
 .skill-logo i {
-    font-size: 6rem;
+    font-size: 2.5rem;
 }
 
 .skill-name {
@@ -224,4 +304,68 @@ body {
     align-items: center;
 }
 
+@media screen and (max-width: 750px) {
+    .goto {
+        display: none;
+    }
 
+    .languages, .frameworks-libs {
+        margin-left: 10%;
+    }
+    .skills-display, .framework-libs-display, .dev-tools {
+        width: 350px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 750px){
+    
+    .mobile-header {
+        display: flex;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+
+    .header {
+        display: block;
+        margin-left: -60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigation {
+        display: none;
+    }
+
+    .intro-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .photo {
+        margin-left: 40px;
+        display: flex;
+    }
+    .photo .profile-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .intro {
+        width: 100%;
+        margin-left: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contents {
+        margin: 2%;
+    }
+}
