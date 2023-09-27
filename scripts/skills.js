@@ -21,9 +21,7 @@ var skills = {
     "Python": "devicon-python-plain",
     "HTML": "devicon-html5-plain colored",
     "CSS" : "devicon-css3-plain colored",
-    "Javascript": "devicon-javascript-plain colored",
-    "MySql" : "devicon-mysql-plain colored",
-    "MongoDB" : "devicon-mongodb-plain colored"
+    "Javascript": "devicon-javascript-plain colored"
 };
 
 for (const lang in skills) {
@@ -36,7 +34,9 @@ var frameworkAndLibs = {
     "Express.js" : "devicon-express-original",
     "React.js" : "devicon-react-original colored",
     "Next.js" : "devicon-nextjs-original",
-    "Tailwind": "devicon-tailwindcss-plain colored"
+    "Tailwind": "devicon-tailwindcss-plain colored",
+    "MySql" : "devicon-mysql-plain colored",
+    "MongoDB" : "devicon-mongodb-plain colored"
 };
 
 for (const skill in frameworkAndLibs) {
