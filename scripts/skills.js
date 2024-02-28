@@ -17,10 +17,10 @@ var appendTools = (name, icon, className) => {
 
 var skills = {
     "C": "devicon-c-plain-wordmark colored",
-    "Java" : "devicon-java-plain colored",
+    "Java": "devicon-java-plain colored",
     "Python": "devicon-python-plain",
     "HTML": "devicon-html5-plain colored",
-    "CSS" : "devicon-css3-plain colored",
+    "CSS": "devicon-css3-plain colored",
     "Javascript": "devicon-javascript-plain colored"
 };
 
@@ -30,13 +30,11 @@ for (const lang in skills) {
 }
 
 var frameworkAndLibs = {
-    "Node.js" : "devicon-nodejs-plain colored",
-    "Express.js" : "devicon-express-original",
-    "React.js" : "devicon-react-original colored",
-    "Next.js" : "devicon-nextjs-original",
-    "Tailwind": "devicon-tailwindcss-plain colored",
-    "MySql" : "devicon-mysql-plain colored",
-    "MongoDB" : "devicon-mongodb-plain colored"
+    "Node.js": "devicon-nodejs-plain colored",
+    "Express.js": "devicon-express-original",
+    "React.js": "devicon-react-original colored",
+    "Next.js": "devicon-nextjs-original",
+    "Tailwind": "devicon-tailwindcss-plain colored"
 };
 
 for (const skill in frameworkAndLibs) {
@@ -44,10 +42,20 @@ for (const skill in frameworkAndLibs) {
     appendTools(skill, icon, '.framework-libs-display')
 }
 
+var dbms = {
+    "MySql": "devicon-mysql-plain colored",
+    "MongoDB": "devicon-mongodb-plain colored",
+    "PostgreSQL": "devicon-postgresql-plain colored",
+}
+
+for (const db in dbms) {
+    var icon = dbms[db]
+    appendTools(db, icon, '.dbms-display')
+}
+
 var devTools = {
-    "git" : "devicon-git-plain",
+    "git": "devicon-git-plain",
     "Github": "devicon-github-original",
-    "VS Code": "devicon-vscode-plain colored"
 }
 
 for (const skill in devTools) {
